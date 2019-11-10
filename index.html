@@ -119,14 +119,46 @@
              transform:scale(1.2) rotate(25deg);
         }
 
-
+        @media only screen and (max-width:768px){
+            #showcase{
+                width: 600px;
+                margin: 0 auto;
+            }
+            
+            #showcase h1{
+                font-size: 100px;
+            }
+        
+            #showcase p{
+                font-size: 25px;
+                justify-content: center;
+            }
+        }
+        
+        @media only screen and (max-width:767px){
+            #showcase{
+                width: 300px;
+                margin: 0 auto;
+            }
+            
+            #showcase h1{
+                font-size: 45px;
+            }
+        
+            #showcase p{
+                font-size: 17px;
+                justify-content: center;
+            }
+            
+        }
+        
     </style>
     
 </head>
 
 <body>
     <div class="background">
-        <embed width="0" height="0" src="Resources/the%20golden%20hour.mp3" hidden autoplay loop>
+        <embed width="0" height="0" src="Resources/the%20golden%20hour.mp3" hidden autoplay loop="true">
         <video autoplay muted loop>
             <source src="Resources/Kimi%20no%20Nawa%20-%20Meteor%20Falling.mp4" type="video/mp4">
         </video>
